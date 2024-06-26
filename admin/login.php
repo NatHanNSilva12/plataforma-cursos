@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,12 +59,12 @@ if(isset($message)){
 <section class="form-container">
 
    <form action="" method="post" enctype="multipart/form-data" class="login">
-      <h3>welcome back!</h3>
-      <p>your email <span>*</span></p>
-      <input type="email" name="email" placeholder="enter your email" maxlength="20" required class="box">
-      <p>your password <span>*</span></p>
-      <input type="password" name="pass" placeholder="enter your password" maxlength="20" required class="box">
-      <p class="link">don't have an account? <a href="register.php">register new</a></p>
+      <h3>bem vindo de volta!</h3>
+      <p>seu email <span>*</span></p>
+      <input type="email" name="email" placeholder="insira seu email" maxlength="20" required class="box">
+      <p>sua senha <span>*</span></p>
+      <input type="password" name="pass" placeholder="insira sua senha" maxlength="20" required class="box">
+      <p class="link">não possui uma conta? <a href="register.php">crie uma agora</a></p>
       <input type="submit" name="submit" value="login now" class="btn">
    </form>
 
