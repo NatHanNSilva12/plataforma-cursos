@@ -28,7 +28,7 @@ $total_comments = $select_comments->rowCount();
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,41 +53,41 @@ $total_comments = $select_comments->rowCount();
    <div class="box-container">
 
       <div class="box">
-         <h3>welcome!</h3>
+         <h3>bem vindo!</h3>
          <p><?= $fetch_profile['name']; ?></p>
-         <a href="profile.php" class="btn">view profile</a>
+         <a href="profile.php" class="btn">ver perfil</a>
       </div>
 
       <div class="box">
          <h3><?= $total_contents; ?></h3>
-         <p>total contents</p>
-         <a href="add_content.php" class="btn">add new content</a>
+         <p>total de conteudo</p>
+         <a href="add_content.php" class="btn">adicionar novo conteudo</a>
       </div>
 
       <div class="box">
          <h3><?= $total_playlists; ?></h3>
-         <p>total playlists</p>
-         <a href="add_playlist.php" class="btn">add new playlist</a>
+         <p>total de playlists</p>
+         <a href="add_playlist.php" class="btn">adicionar nova playlist</a>
       </div>
 
       <div class="box">
          <h3><?= $total_likes; ?></h3>
-         <p>total likes</p>
-         <a href="contents.php" class="btn">view contents</a>
+         <p>total de likes</p>
+         <a href="contents.php" class="btn">ver linkes</a>
       </div>
 
       <div class="box">
          <h3><?= $total_comments; ?></h3>
-         <p>total comments</p>
-         <a href="comments.php" class="btn">view comments</a>
+         <p>total de comentário</p>
+         <a href="comments.php" class="btn">ver comentários</a>
       </div>
 
       <div class="box">
-         <h3>quick select</h3>
-         <p>login or register</p>
+         <h3>seleção rápida</h3>
+         <p>login ou registro</p>
          <div class="flex-btn">
             <a href="login.php" class="option-btn">login</a>
-            <a href="register.php" class="option-btn">register</a>
+            <a href="register.php" class="option-btn">registro</a>
          </div>
       </div>
 
