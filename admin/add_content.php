@@ -53,7 +53,7 @@ if(isset($_POST['submit'])){
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -73,22 +73,22 @@ if(isset($_POST['submit'])){
    
 <section class="video-form">
 
-   <h1 class="heading">upload content</h1>
+   <h1 class="heading">upload de conteudo</h1>
 
    <form action="" method="post" enctype="multipart/form-data">
       <p>video status <span>*</span></p>
       <select name="status" class="box" required>
-         <option value="" selected disabled>-- select status</option>
-         <option value="active">active</option>
-         <option value="deactive">deactive</option>
+         <option value="" selected disabled>-- selecione o status</option>
+         <option value="active">ativar</option>
+         <option value="deactive">desativar</option>
       </select>
-      <p>video title <span>*</span></p>
+      <p>titulo do video<span>*</span></p>
       <input type="text" name="title" maxlength="100" required placeholder="enter video title" class="box">
-      <p>video description <span>*</span></p>
+      <p> descrição video <span>*</span></p>
       <textarea name="description" class="box" required placeholder="write description" maxlength="1000" cols="30" rows="10"></textarea>
       <p>video playlist <span>*</span></p>
       <select name="playlist" class="box" required>
-         <option value="" disabled selected>--select playlist</option>
+         <option value="" disabled selected>--selecione a playlist</option>
          <?php
          $select_playlists = $conn->prepare("SELECT * FROM `playlist` WHERE tutor_id = ?");
          $select_playlists->execute([$tutor_id]);
@@ -101,7 +101,7 @@ if(isset($_POST['submit'])){
          ?>
          <?php
          }else{
-            echo '<option value="" disabled>no playlist created yet!</option>';
+            echo '<option value="" disabled>playlist nãp criada</option>';
          }
          ?>
       </select>
