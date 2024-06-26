@@ -55,16 +55,16 @@ if(isset($_POST['delete_playlist'])){
    $delete_bookmark->execute([$delete_id]);
    $delete_playlist = $conn->prepare("DELETE FROM `playlist` WHERE id = ?");
    $delete_playlist->execute([$delete_id]);
-   $message[] = 'playlist deleted!';
+   $message[] = 'playlist deletada!';
    }else{
-      $message[] = 'playlist already deleted!';
+      $message[] = 'playlist já deletada!';
    }
 }
 
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -84,7 +84,7 @@ if(isset($_POST['delete_playlist'])){
    
 <section class="contents">
 
-   <h1 class="heading">contents</h1>
+   <h1 class="heading">conteúdos</h1>
 
    <div class="box-container">
 
@@ -106,18 +106,18 @@ if(isset($_POST['delete_playlist'])){
          <h3 class="title"><?= $fecth_videos['title']; ?></h3>
          <form action="" method="post" class="flex-btn">
             <input type="hidden" name="video_id" value="<?= $video_id; ?>">
-            <a href="update_content.php?get_id=<?= $video_id; ?>" class="option-btn">update</a>
+            <a href="update_content.php?get_id=<?= $video_id; ?>" class="option-btn">atualizar</a>
             <input type="submit" value="delete" class="delete-btn" onclick="return confirm('delete this video?');" name="delete_video">
          </form>
-         <a href="view_content.php?get_id=<?= $video_id; ?>" class="btn">view content</a>
+         <a href="view_content.php?get_id=<?= $video_id; ?>" class="btn">ver conteúdos</a>
       </div>
    <?php
          }
       }else{
-         echo '<p class="empty">no contents founds!</p>';
+         echo '<p class="empty">nenhum video encontrado!</p>';
       }
    }else{
-      echo '<p class="empty">please search something!</p>';
+      echo '<p class="empty">tente procurar por algo!</p>';
    }
    ?>
 
@@ -156,17 +156,17 @@ if(isset($_POST['delete_playlist'])){
          <p class="description"><?= $fetch_playlist['description']; ?></p>
          <form action="" method="post" class="flex-btn">
             <input type="hidden" name="playlist_id" value="<?= $playlist_id; ?>">
-            <a href="update_playlist.php?get_id=<?= $playlist_id; ?>" class="option-btn">update</a>
+            <a href="update_playlist.php?get_id=<?= $playlist_id; ?>" class="option-btn">atualizar</a>
             <input type="submit" value="delete_playlist" class="delete-btn" onclick="return confirm('delete this playlist?');" name="delete">
          </form>
-         <a href="view_playlist.php?get_id=<?= $playlist_id; ?>" class="btn">view playlist</a>
+         <a href="view_playlist.php?get_id=<?= $playlist_id; ?>" class="btn">ver playlist</a>
       </div>
       <?php
          } 
       }else{
-         echo '<p class="empty">no playlists found!</p>';
+         echo '<p class="empty">nenhuma playlists encontrada!</p>';
       }}else{
-         echo '<p class="empty">please search something!</p>';
+         echo '<p class="empty">tente procurar por algo!</p>';
       }
       ?>
 

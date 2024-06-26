@@ -147,7 +147,7 @@ $total_bookmarked = $select_bookmark->rowCount();
       <?php
          }
       }else{
-         echo '<p class="empty">no courses added yet!</p>';
+         echo '<p class="empty">nenhum curso adicionado!</p>';
       }
       ?>
 
