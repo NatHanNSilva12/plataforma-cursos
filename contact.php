@@ -67,8 +67,8 @@ if(isset($_POST['submit'])){
          <h3>Em um toque</h3>
          <input type="text" placeholder="enter your name" required maxlength="100" name="name" class="box">
          <input type="email" placeholder="enter your email" required maxlength="100" name="email" class="box">
-         <input type="number" min="0" max="9999999999" placeholder="enter your number" required maxlength="10" name="number" class="box">
-         <textarea name="msg" class="box" placeholder="enter your message" required cols="30" rows="10" maxlength="1000"></textarea>
+         <input type="number" min="0" max="9999999999" placeholder="insira seu numero" required maxlength="10" name="number" class="box">
+         <textarea name="msg" class="box" placeholder="insira sua mensagem" required cols="30" rows="10" maxlength="1000"></textarea>
          <input type="submit" value="send message" class="inline-btn" name="submit">
       </form>
 
