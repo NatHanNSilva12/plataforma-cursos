@@ -64,7 +64,7 @@ if(isset($_POST['submit'])){
       </div>
 
       <form action="" method="post">
-         <h3>get in touch</h3>
+         <h3>Em um toque</h3>
          <input type="text" placeholder="enter your name" required maxlength="100" name="name" class="box">
          <input type="email" placeholder="enter your email" required maxlength="100" name="email" class="box">
          <input type="number" min="0" max="9999999999" placeholder="enter your number" required maxlength="10" name="number" class="box">
@@ -78,22 +78,22 @@ if(isset($_POST['submit'])){
 
       <div class="box">
          <i class="fas fa-phone"></i>
-         <h3>phone number</h3>
-         <a href="tel:1234567890">123-456-7890</a>
-         <a href="tel:1112223333">111-222-3333</a>
+         <h3>número de telefone</h3>
+         <a href="tel:1234567890">(11) 3837-0330</a>
+         <a href="tel:1112223333">(11) 3835-7554</a>
       </div>
 
       <div class="box">
          <i class="fas fa-envelope"></i>
-         <h3>email address</h3>
-         <a href="mailto:shaikhanas@gmail.com">shaikhanas@gmail.come</a>
-         <a href="mailto:anasbhai@gmail.com">anasbhai@gmail.come</a>
+         <h3>email</h3>
+         <a href="mailto:shaikhanas@gmail.com">contato@referencerh.com.br</a>
+         <a href="mailto:anasbhai@gmail.com">contato@referencerh.com.br</a>
       </div>
 
       <div class="box">
          <i class="fas fa-map-marker-alt"></i>
-         <h3>office address</h3>
-         <a href="#">flat no. 1, a-1 building, jogeshwari, mumbai, india - 400104</a>
+         <h3>Endereço Osasco</h3>
+         <a href="#">fAv. dos Remédios, 821 - Vila dos Remedios Osasco - SP, 06298-005</a>
       </div>
 
 
