@@ -32,14 +32,14 @@ if(isset($_POST['submit'])){
 
    move_uploaded_file($image_tmp_name, $image_folder);
 
-   $message[] = 'new playlist created!';  
+   $message[] = 'nova playlist criada!';  
 
 }
 
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,18 +59,18 @@ if(isset($_POST['submit'])){
    
 <section class="playlist-form">
 
-   <h1 class="heading">create playlist</h1>
+   <h1 class="heading">criar playlist</h1>
 
    <form action="" method="post" enctype="multipart/form-data">
       <p>playlist status <span>*</span></p>
       <select name="status" class="box" required>
-         <option value="" selected disabled>-- select status</option>
-         <option value="active">active</option>
-         <option value="deactive">deactive</option>
+         <option value="" selected disabled>-- selecione status</option>
+         <option value="active">ativa</option>
+         <option value="deactive">finalizada</option>
       </select>
-      <p>playlist title <span>*</span></p>
+      <p>titulo da playlist <span>*</span></p>
       <input type="text" name="title" maxlength="100" required placeholder="enter playlist title" class="box">
-      <p>playlist description <span>*</span></p>
+      <p>descrição da playlist  <span>*</span></p>
       <textarea name="description" class="box" required placeholder="write description" maxlength="1000" cols="30" rows="10"></textarea>
       <p>playlist thumbnail <span>*</span></p>
       <input type="file" name="image" accept="image/*" required class="box">
