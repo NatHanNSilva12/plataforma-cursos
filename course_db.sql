@@ -27,6 +27,10 @@ SET time_zone = "+00:00";
 -- Table structure for table `bookmark`
 --
 
+CREATE DATABASE course_db;
+
+USE course_db;
+
 CREATE TABLE `bookmark` (
   `user_id` varchar(20) NOT NULL,
   `playlist_id` varchar(20) NOT NULL
@@ -44,7 +48,7 @@ CREATE TABLE `comments` (
   `user_id` varchar(20) NOT NULL,
   `tutor_id` varchar(20) NOT NULL,
   `comment` varchar(1000) NOT NULL,
-  `date` date NOT NULL DEFAULT current_timestamp()
+  `date` DATETIME DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -74,7 +78,7 @@ CREATE TABLE `content` (
   `description` varchar(1000) NOT NULL,
   `video` varchar(100) NOT NULL,
   `thumb` varchar(100) NOT NULL,
-  `date` date NOT NULL DEFAULT current_timestamp(),
+  `date` DATETIME DEFAULT CURRENT_TIMESTAMP,
   `status` varchar(20) NOT NULL DEFAULT 'deactive'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -102,7 +106,7 @@ CREATE TABLE `playlist` (
   `title` varchar(100) NOT NULL,
   `description` varchar(1000) NOT NULL,
   `thumb` varchar(100) NOT NULL,
-  `date` date NOT NULL DEFAULT current_timestamp(),
+  `date` DATETIME DEFAULT CURRENT_TIMESTAMP,
   `status` varchar(20) NOT NULL DEFAULT 'deactive'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -139,3 +143,5 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+SET SQL_MODE='ALLOW_INVALID_DATES';
